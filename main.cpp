@@ -10,6 +10,8 @@ using namespace std; //in c++ we can use namespaces for libraries to call method
 int main() {
     //Printing to console
     std::cout << "Hello, World!" << std::endl; //we can also call methods without a namespace like so
+    cout << "Printing using namespace std!" << endl; //endl inserts a newline character to the end
+    // << is for out and >> is for input in cout and cin
 
     //wtf is :: in c++?
     /*
@@ -30,9 +32,6 @@ int main() {
      * example::var;
      * and call it wherever I wanted.
      * */
-
-    cout << "Printing using namespace std!" << endl; //endl inserts a newline character to the end
-    // << is for out and >> is for input in cout and cin
 
     //User Input
     //Basic example of user input
