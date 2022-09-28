@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Banks/Dropbox/My PC (DESKTOP-N5M9V2T)/Desktop/LearningCPP
+# Install script for directory: C:/Users/Banks/Desktop/LearningCPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Banks/Dropbox/My PC (DESKTOP-N5M9V2T)/Desktop/LearningCPP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Banks/Desktop/LearningCPP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
