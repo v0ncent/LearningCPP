@@ -16,6 +16,34 @@ void defaultTypeParameter(string param = "default") {
     cout << "\n" + param;
 }
 
+//Classes in c++
+class Example{ //similar to java there is just no public at the beginning
+    int classVar; // if not in public or private the default is private
+    int someVar;
+    string someString;
+public: //declare public variables and methods
+    int publicVar = 0; // example to access public variables
+
+    //constructors in c++
+    // similar to java this time they just need to be inside the public field
+    explicit Example(int classVar){ //if you have a single argument constructor you should mark it as explicit
+        this->classVar = classVar;
+    }
+    //else if you have multiple args
+    Example(int someVar, string someString){
+        this->someVar = someVar;
+        this->someString = someString;
+    }
+    //create methods
+    void aMethod(){
+        cout << "Im a method";
+    }
+
+private: // same as public but this time if you want them private
+
+
+}; //must have a semicolon at the end of the bracket
+
 //Main Function
 // this is the main function for c++ and is globally scoped for the compiler
 int main() {
@@ -210,7 +238,7 @@ int main() {
     //Example of Modifiers in vectors
     // inserts 15 to the last position
     exampleVec.push_back(15);
-    int n = exampleVec.size();
+    int n = (int) exampleVec.size();
     cout << "\nThe last element is: " << exampleVec[n - 1];
 
     // removes last element
@@ -236,7 +264,7 @@ int main() {
 
     // Inserts 20 at the end
     exampleVec.emplace_back(20);
-    n = exampleVec.size();
+    n = (int) exampleVec.size();
     cout << "\nThe last element is: " << exampleVec[n - 1];
 
     // erases the vector
@@ -276,6 +304,15 @@ int main() {
 
     //Call functions
     defaultTypeParameter();
+
+    //Instantiate Objects in c++
+    Example example = Example(10); // if no constructor you do not need to include the = sign just end with semicolon
+
+    Example anotherExample = Example(10,"Penis");
+
+    anotherExample.aMethod();
+    // if constructor you would do it like so
+    //Example example = Example(8);
 
     //Why return 0 in main function
     return 0; //returning zero means the program ran successfully but is optional to include
