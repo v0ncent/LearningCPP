@@ -18,8 +18,8 @@ void defaultTypeParameter(string param = "default") {
 
 //Classes in c++
 class Example{ //similar to java there is just no public at the beginning
-    int classVar; // if not in public or private the default is private
-    int someVar;
+    int classVar{}; // if not in public or private the default is private
+    int someVar{};
     string someString;
 public: //declare public variables and methods
     int publicVar = 0; // example to access public variables
